@@ -1,0 +1,26 @@
+
+{
+    "env": {
+     "browser": true,
+     "es2021": true,
+     "node": true
+    },
+    "extends": [//继承其他eslint 配置
+     "eslint:recommended",//eslint推荐配置
+     "plugin:@typescript-eslint/recommended",//ts推荐的配置
+     "prettier",
+     "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",//使用什么样的解析器 解析成抽象语法书ast
+    "parserOptions": { //parser配置
+     "ecmaVersion": "latest",
+     "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint", "prettier"],
+    "rules": {
+     "prettier/prettier": "error",
+     "no-case-declarations": "off",
+     "no-constant-condition": "off",
+     "@typescript-eslint/ban-ts-comment": "off"
+    }
+ }
